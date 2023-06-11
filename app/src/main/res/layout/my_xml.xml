@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    a:id="@+id/main"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:orientation="vertical"
+    a:background="@color/lavender">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        a:layout_width="match_parent"
+        a:layout_height="match_parent">
+
+        <Button
+            a:id="@+id/button3"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginStart="10dp"
+            a:layout_marginTop="10dp"
+            a:layout_marginEnd="10dp"
+            a:text="Повернутися на головну"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/readers_btn" />
+
+        <Button
+            a:id="@+id/btn"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginStart="10dp"
+            a:layout_marginTop="10dp"
+            a:layout_marginEnd="10dp"
+            a:onClick="add_btn_clicked"
+            a:text="Додати"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lv" />
+
+        <ListView
+            a:id="@+id/lv"
+            a:layout_width="match_parent"
+            a:layout_height="150dp"
+            a:layout_marginStart="10dp"
+            a:layout_marginTop="10dp"
+            a:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            a:id="@+id/books_btn"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginStart="10dp"
+            a:layout_marginTop="10dp"
+            a:text="Книги"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+        <Button
+            a:id="@+id/readers_btn"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginStart="10dp"
+            a:layout_marginTop="10dp"
+            a:layout_marginEnd="10dp"
+            a:text="Читачі"
+            app:layout_constraintEnd_toStartOf="@+id/card_btn"
+            app:layout_constraintStart_toEndOf="@+id/books_btn"
+            app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+        <Button
+            a:id="@+id/card_btn"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:layout_marginTop="10dp"
+            a:layout_marginEnd="10dp"
+            a:text="Картка"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
